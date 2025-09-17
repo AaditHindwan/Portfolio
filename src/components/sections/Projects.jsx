@@ -14,9 +14,9 @@ export const Projects = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2"> To-Do List</h3>
+              <h3 className="text-xl font-bold mb-2">LogIn/SignUp Page</h3>
               <p className="text-gray-400 mb-4">
-                A to-do list is a simple tool for organizing and tracking tasks to be completed.
+                A basic and user-friendly page, that lets you toggle between Login and Signup based on your preferences.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Javascript", "CSS", "React"].map((tech, key) => (
@@ -33,7 +33,7 @@ export const Projects = () => {
 
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/AaditHindwan/LogIn-SignUp-Form.git"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
@@ -126,9 +126,9 @@ export const Projects = () => {
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">Calculator</h3>
+              <h3 className="text-xl font-bold mb-2">To-Do List</h3>
               <p className="text-gray-400 mb-4">
-               A Simple calculator for performing daily-use calculations.
+               A to-do list is a simple tool for organizing and tracking tasks to be completed.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Javascript", "CSS", "React"].map((tech, key) => (

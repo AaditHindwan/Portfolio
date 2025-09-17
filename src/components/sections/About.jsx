@@ -3,9 +3,9 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
     const frontendSkills = [
         "HTML",
+        "CSS",
         "Javascript",
-        "TailwindCSS",
-        "React"
+        "ReactJS"
     ];
 
     return (
@@ -62,7 +62,7 @@ export const About = () => {
                             <div>
                                 <h4 className="font-semibold">
                                     {" "}
-                                    IBM Skillsbuild FrontEnd Web Development{" "}
+                                    IBM Skillsbuild Click, Code, Create FEWD Learning Program{" "}
                                 </h4>
                             </div>
 

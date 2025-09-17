@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +21,7 @@ export const Contact = () => {
         e.target,
         process.env.REACT_APP_PUBLIC_KEY
       )
-      .then((result) => {
+      .then(() => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
@@ -38,6 +40,8 @@ export const Contact = () => {
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
+
+          {/* Contact Form */}
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
@@ -91,6 +95,37 @@ export const Contact = () => {
               Send Message
             </button>
           </form>
+
+          {/* ✅ Socials Section */}
+          <div className="mt-10 text-center">
+            <p className="text-white mb-4 font-semibold">Socials:</p>
+            <div className="flex justify-center space-x-6">
+              <a
+                href="https://twitter.com/Aadit_4376"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-400 transition"
+              >
+                <FontAwesomeIcon icon={faXTwitter} size="2x" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/aadit-hindwan-4376gwa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-400 transition"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+              <a
+                href="https://github.com/AaditHindwan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-400 transition"
+              >
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+            </div>
+          </div>
         </div>
       </RevealOnScroll>
     </section>
